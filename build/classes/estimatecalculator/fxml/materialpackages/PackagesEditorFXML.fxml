@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.cell.*?> 
+<?import javafx.collections.*?> 
+
+<GridPane id="materialPackageMainGridPane" hgap="15" vgap="10" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.141" fx:controller="estimatecalculator.fxml.materialpackages.PackagesEditorFXMLController" prefWidth="300">
+    <padding>
+        <Insets top="25" right="25" bottom="10" left="25"/>
+    </padding>
+
+    <GridPane id="materialPackageGridPane" hgap="15" vgap="7" prefWidth="700" GridPane.columnIndex="2" GridPane.rowIndex="1" GridPane.columnSpan="2" GridPane.rowSpan="2">
+        <Label text="Упаковка" GridPane.columnIndex="0" GridPane.rowIndex="0" GridPane.columnSpan="2"/>
+
+        <TableView fx:id="materialPackagesTableView" GridPane.columnIndex="0" GridPane.rowIndex="1">
+            <columns>
+                <TableColumn text="Название" prefWidth="200" >
+                    <cellValueFactory>
+                        <PropertyValueFactory property="name" />
+                    </cellValueFactory>
+                </TableColumn>               
+                <TableColumn text="Кол-во в упаковке">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="quantity" />
+                    </cellValueFactory>
+                </TableColumn>              
+                <TableColumn text="Длинная сторона">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="longSide" />
+                    </cellValueFactory>
+                </TableColumn>           
+                <TableColumn text="Средняя сторона">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="mediumSide" />
+                    </cellValueFactory>
+                </TableColumn>                
+                <TableColumn text="Короткая сторона">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="smallSide" />
+                    </cellValueFactory>
+                </TableColumn>           
+            </columns>  
+        </TableView>
+        <HBox spacing="10" alignment="bottom_right" GridPane.columnIndex="0" GridPane.rowIndex="2">
+            <TextField fx:id="materialPackageNameField" promptText="Название" prefWidth="250"/>
+            <TextField fx:id="materialPackageQuantityField" promptText="Кол-во в упаковке" prefWidth="250"/>
+            <TextField fx:id="materialPackageLongSideField" promptText="Длинная сторона" prefWidth="250"/>
+            <TextField fx:id="materialPackageMediumSideField" promptText="Средняя сторона" prefWidth="250"/>
+            <TextField fx:id="materialPackageSmallSideField" promptText="Короткая сторона" prefWidth="250"/>
+            <Button text="Add" onAction="#addMaterialPackageFromEditor"/>
+        </HBox>
+    </GridPane>  
+</GridPane>  

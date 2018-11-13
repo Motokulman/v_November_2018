@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.cell.*?> 
+<?import javafx.collections.*?> 
+<?import javafx.scene.shape.*?>
+
+<GridPane id="visualRedactorGridPane" hgap="15" vgap="10" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.141" fx:controller="estimatecalculator.visualredactor.VisualredactorController" prefWidth="700">
+<padding><Insets top="25" right="25" bottom="10" left="25"/></padding>
+<!--<Rectangle fx:id="rectangle" x="10" y="10" width="700" height="700"/>-->
+<Line startX="0" startY="0" endX="100" endY="100" />
+
+  
+
+
+<stylesheets>
+        <URL value="@visualredactor.css"/>
+    </stylesheets>
+</GridPane>

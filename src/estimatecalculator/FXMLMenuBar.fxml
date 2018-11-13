@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+
+<HBox id="MenuHBox" fx:controller="estimatecalculator.MenuController" xmlns:fx="http://javafx.com/fxml">
+   <MenuBar fx:id="menuBar" onKeyPressed="#handleKeyInput"  prefWidth = "3400"> 
+      <menus>
+         <Menu text="Файл">
+            <items>
+               <MenuItem text="Новый" onAction="#handleCreateNewFile"/>
+               <MenuItem text="Открыть"  onAction="#handleOpenFile"/>
+               <MenuItem text="Сохранить"/>
+               <MenuItem text="Сохранить как" onAction="#handleSaveFileAs"/>
+               <SeparatorMenuItem  />
+               <MenuItem text="Выход"/>
+            </items>
+         </Menu>
+         <Menu text="Правка"  visible="false">
+            <items>
+               <MenuItem text="Копировать" visible="false"/>
+               <MenuItem text="Вырезать" visible="false"/>
+               <MenuItem text="Вставить" visible="false"/>
+            </items>
+         </Menu>
+         <Menu text="Помощь">
+            <items>
+               <MenuItem text="Поиск" disable="true"/>
+               <MenuItem text="Руководство" visible="false"/>
+               <SeparatorMenuItem />
+               <MenuItem text="О программе" onAction="#handleAboutAction"/>
+            </items>
+         </Menu>
+      </menus>
+   </MenuBar>
+</HBox>

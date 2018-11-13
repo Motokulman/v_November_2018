@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.cell.*?> 
+<?import javafx.collections.*?> 
+
+<GridPane id="propertyGridPane" hgap="15" vgap="10" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.141" fx:controller="estimatecalculator.propertypane.mainwall.PropertyPaneController" prefWidth="300">
+<padding><Insets top="25" right="25" bottom="10" left="25"/></padding>
+<!-- * ////////////////////////////////////////////////////////////
+     * Материал №1 ///////////////////////////////////////////////
+     * //////////////////////////////////////////////////////////// -->
+    <Label id="label"  text="Базовая стена" GridPane.columnIndex="0" GridPane.rowIndex="0" GridPane.columnSpan="2"  prefWidth="200"/>
+    <TextField fx:id="mainWallAreaTextField" promptText="Площадь, кв.м." prefWidth="90" GridPane.columnIndex="2" GridPane.rowIndex="0" GridPane.columnSpan="2"  />
+
+    <GridPane id="2nf-propertyGridPane" hgap="15" vgap="7" prefWidth="500" GridPane.columnIndex="0"  GridPane.columnSpan="2" GridPane.rowIndex="1">
+        <Label text="Камень 2НФ" GridPane.columnIndex="0" GridPane.rowIndex="0" GridPane.columnSpan="2"/>
+
+        <CheckBox id="2nf-1.5" text="Толщина 1.5 камня" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+        <CheckBox id="2nf-1.5-non-insulate" text="Без утепления" translateX="10" GridPane.columnIndex="0" GridPane.rowIndex="2"/>
+        <CheckBox id="2nf-1.5-insulate-1" text="Утепление XPS 50" translateX="10" GridPane.columnIndex="0" GridPane.rowIndex="3"/>
+        <CheckBox id="2nf-1.5-insulate-2" text="Утепление XPS 100" translateX="10" GridPane.columnIndex="0" GridPane.rowIndex="4"/>
+        <CheckBox id="2nf-1.5-insulate-3" text="Утепление МВ 100" translateX="10" GridPane.columnIndex="0" GridPane.rowIndex="5"/>
+
+        <Separator  GridPane.columnIndex="1" GridPane.rowIndex="1" orientation="vertical"  GridPane.rowSpan="5" translateX="5" />
+
+        <CheckBox id="2nf-2" text="Толщина 2 камня" GridPane.columnIndex="2" GridPane.rowIndex="1"/>    
+        <CheckBox id="2nf-2-non-insulate" text="Без утепления" translateX="10" GridPane.columnIndex="2" GridPane.rowIndex="2"/>
+        <CheckBox id="2nf-2-insulate-1" text="Утепление XPS 50" translateX="10" GridPane.columnIndex="2" GridPane.rowIndex="3"/>
+        <CheckBox id="2nf-2-insulate-2" text="Утепление XPS 100" translateX="10" GridPane.columnIndex="2" GridPane.rowIndex="4"/>
+        <CheckBox id="2nf-2-insulate-3" text="Утепление МВ 100" translateX="10" GridPane.columnIndex="2" GridPane.rowIndex="5"/>
+
+        <Separator  GridPane.columnIndex="3" GridPane.rowIndex="1" orientation="vertical"  GridPane.rowSpan="4" translateX="5" />
+
+        <CheckBox id="2nf-2.5" text="Толщина 2.5 камня" GridPane.columnIndex="4" GridPane.rowIndex="1"/>    
+        <CheckBox id="2nf-2.5-non-insulate" text="Без утепления" translateX="10" GridPane.columnIndex="4" GridPane.rowIndex="2"/>
+        <CheckBox id="2nf-2.5-insulate-1" text="Утепление XPS 50" translateX="10" GridPane.columnIndex="4" GridPane.rowIndex="3"/>
+        <CheckBox id="2nf-2.5-insulate-2" text="Утепление XPS 100" translateX="10" GridPane.columnIndex="4" GridPane.rowIndex="4"/>
+        <CheckBox id="2nf-2.5-insulate-3" text="Утепление МВ 100" translateX="10" GridPane.columnIndex="4" GridPane.rowIndex="5"/>
+    </GridPane>   
+<!-- * ////////////////////////////////////////////////////////////
+     * Материал №2 ///////////////////////////////////////////////
+     * //////////////////////////////////////////////////////////// -->
+    <GridPane id="keramzitoblock-propertyGridPane" hgap="15" vgap="7" prefWidth="500" GridPane.columnIndex="0" GridPane.rowIndex="2" GridPane.columnSpan="2">
+        <Label text="Керамзитоблок" GridPane.columnIndex="0" GridPane.rowIndex="0" GridPane.columnSpan="2"/>
+
+        <CheckBox id="keramzitoblock-0.5" text="Толщина 0.5 блока" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+        <CheckBox id="keramzitoblock-0.5-non-insulate" text="Без утепления" translateX="10" GridPane.columnIndex="0" GridPane.rowIndex="2"/>
+        <CheckBox id="keramzitoblock-0.5-insulate-1" text="Утепление XPS 50" translateX="10" GridPane.columnIndex="0" GridPane.rowIndex="3"/>
+        <CheckBox id="keramzitoblock-0.5-insulate-2" text="Утепление XPS 100" translateX="10" GridPane.columnIndex="0" GridPane.rowIndex="4"/>
+        <CheckBox id="keramzitoblock-0.5-insulate-3" text="Утепление МВ 100" translateX="10" GridPane.columnIndex="0" GridPane.rowIndex="5"/>
+
+        <Separator  GridPane.columnIndex="1" GridPane.rowIndex="1" orientation="vertical"  GridPane.rowSpan="5" translateX="5" />
+
+        <CheckBox id="keramzitoblock-1" text="Толщина 1 блок" GridPane.columnIndex="2" GridPane.rowIndex="1"/>
+        <CheckBox id="keramzitoblock-1-non-insulate" text="Без утепления" translateX="10" GridPane.columnIndex="2" GridPane.rowIndex="2"/>
+        <CheckBox id="keramzitoblock-1-insulate-1" text="Утепление XPS 50" translateX="10" GridPane.columnIndex="2" GridPane.rowIndex="3"/>
+        <CheckBox id="keramzitoblock-1-insulate-2" text="Утепление XPS 100" translateX="10" GridPane.columnIndex="2" GridPane.rowIndex="4"/>
+        <CheckBox id="keramzitoblock-1-insulate-3" text="Утепление МВ 100" translateX="10" GridPane.columnIndex="2" GridPane.rowIndex="5"/>
+
+        <Separator  GridPane.columnIndex="3" GridPane.rowIndex="1" orientation="vertical"  GridPane.rowSpan="5" translateX="5" />
+
+        <CheckBox id="keramzitoblock-1.5" text="Толщина 1.5 блока" GridPane.columnIndex="4" GridPane.rowIndex="1"/>
+        <CheckBox id="keramzitoblock-1.5-non-insulate" text="Без утепления" translateX="10" GridPane.columnIndex="4" GridPane.rowIndex="2"/>
+        <CheckBox id="keramzitoblock-1.5-insulate-1" text="Утепление XPS 50" translateX="10" GridPane.columnIndex="4" GridPane.rowIndex="3"/>
+        <CheckBox id="keramzitoblock-1.5-insulate-2" text="Утепление XPS 100" translateX="10" GridPane.columnIndex="4" GridPane.rowIndex="4"/>
+        <CheckBox id="keramzitoblock-1.5-insulate-2" text="Утепление МВ 100" translateX="10" GridPane.columnIndex="4" GridPane.rowIndex="5"/>
+    </GridPane>   
+<!-- * ////////////////////////////////////////////////////////////
+     * Материал №3 ///////////////////////////////////////////////
+     * //////////////////////////////////////////////////////////// -->    
+    <GridPane id="porotherm-propertyGridPane" hgap="15" vgap="7" prefWidth="500" GridPane.columnIndex="0"  GridPane.rowIndex="3" GridPane.columnSpan="2">
+        <Label text="Porotherm" GridPane.columnIndex="0" GridPane.rowIndex="0" GridPane.columnSpan="2"/>
+
+        <CheckBox id="porotherm-38" text="Porotherm 38" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+        <CheckBox id="porotherm-38-non-insulate" text="Без утепления" translateX="10" GridPane.columnIndex="0" GridPane.rowIndex="2"/>
+        <CheckBox id="porotherm-38-insulate-1" text="Утепление XPS 50" translateX="10" GridPane.columnIndex="0" GridPane.rowIndex="3"/>
+        <CheckBox id="porotherm-38-insulate-2" text="Утепление XPS 100" translateX="10" GridPane.columnIndex="0" GridPane.rowIndex="4"/>
+        <CheckBox id="porotherm-38-insulate-3" text="Утепление МВ 100" translateX="10" GridPane.columnIndex="0" GridPane.rowIndex="5"/>
+
+        <Separator  GridPane.columnIndex="1" GridPane.rowIndex="1" orientation="vertical"  GridPane.rowSpan="5" translateX="5" />
+
+        <CheckBox id="porotherm-44" text="Porotherm 44" GridPane.columnIndex="2" GridPane.rowIndex="1"/>
+        <CheckBox id="porotherm-44-non-insulate" text="Без утепления" translateX="10" GridPane.columnIndex="2" GridPane.rowIndex="2"/>
+        <CheckBox id="porotherm-44-insulate-1" text="Утепление XPS 50" translateX="10" GridPane.columnIndex="2" GridPane.rowIndex="3"/>
+        <CheckBox id="porotherm-44-insulate-2" text="Утепление XPS 100" translateX="10" GridPane.columnIndex="2" GridPane.rowIndex="4"/>
+        <CheckBox id="porotherm-44-insulate-3" text="Утепление МВ 100" translateX="10" GridPane.columnIndex="2" GridPane.rowIndex="5"/>
+
+        <Separator  GridPane.columnIndex="3" GridPane.rowIndex="1" orientation="vertical"  GridPane.rowSpan="5" translateX="5" />
+
+        <CheckBox id="porotherm-51" text="Porotherm 51" GridPane.columnIndex="4" GridPane.rowIndex="1"/>
+        <CheckBox id="porotherm-51-non-insulate" text="Без утепления" translateX="10" GridPane.columnIndex="4" GridPane.rowIndex="2"/>
+        <CheckBox id="porotherm-51-insulate-1" text="Утепление XPS 50" translateX="10" GridPane.columnIndex="4" GridPane.rowIndex="3"/>
+        <CheckBox id="porotherm-51-insulate-2" text="Утепление XPS 100" translateX="10" GridPane.columnIndex="4" GridPane.rowIndex="4"/>
+        <CheckBox id="porotherm-51-insulate-3" text="Утепление МВ 100" translateX="10" GridPane.columnIndex="4" GridPane.rowIndex="5"/>
+    </GridPane>   
+<!-- * ////////////////////////////////////////////////////////////
+     * Материал №4 ///////////////////////////////////////////////
+     * //////////////////////////////////////////////////////////// -->    
+     <GridPane id="gazobeton-propertyGridPane" hgap="15" vgap="7" prefWidth="500" GridPane.columnIndex="0"  GridPane.rowIndex="4" GridPane.columnSpan="2">
+        <Label text="Газобетон" GridPane.columnIndex="0" GridPane.rowIndex="0" GridPane.columnSpan="2"/>
+
+        <CheckBox id="gazobeton-300" text="Толщина 300" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+        <CheckBox id="gazobeton-300-non-insulate" text="Без утепления" translateX="10" GridPane.columnIndex="0" GridPane.rowIndex="2"/>
+        <CheckBox id="gazobeton-300-insulate-1" text="Утепление XPS 50" translateX="10" GridPane.columnIndex="0" GridPane.rowIndex="3"/>
+        <CheckBox id="gazobeton-300-insulate-2" text="Утепление XPS 100" translateX="10" GridPane.columnIndex="0" GridPane.rowIndex="4"/>
+        <CheckBox id="gazobeton-300-insulate-3" text="Утепление МВ 100" translateX="10" GridPane.columnIndex="0" GridPane.rowIndex="5"/>
+
+        <Separator  GridPane.columnIndex="1" GridPane.rowIndex="1" orientation="vertical"  GridPane.rowSpan="5" translateX="5" />
+
+        <CheckBox id="gazobeton-400" text="Толщина 400" GridPane.columnIndex="2" GridPane.rowIndex="1"/>
+        <CheckBox id="gazobeton-400-non-insulate" text="Без утепления" translateX="10" GridPane.columnIndex="2" GridPane.rowIndex="2"/>
+        <CheckBox id="gazobeton-400-insulate-1" text="Утепление XPS 50" translateX="10" GridPane.columnIndex="2" GridPane.rowIndex="3"/>
+        <CheckBox id="gazobeton-400-insulate-2" text="Утепление XPS 100" translateX="10" GridPane.columnIndex="2" GridPane.rowIndex="4"/>
+        <CheckBox id="gazobeton-400-insulate-3" text="Утепление МВ 100" translateX="10" GridPane.columnIndex="2" GridPane.rowIndex="5"/>
+
+        <Separator  GridPane.columnIndex="3" GridPane.rowIndex="1" orientation="vertical"  GridPane.rowSpan="5" translateX="5" />
+
+        <CheckBox id="gazobeton-500" text="Толщина 500" GridPane.columnIndex="4" GridPane.rowIndex="1"/>
+        <CheckBox id="gazobeton-500-non-insulate" text="Без утепления" translateX="10" GridPane.columnIndex="4" GridPane.rowIndex="2"/>
+        <CheckBox id="gazobeton-500-insulate-1" text="Утепление XPS 50" translateX="10" GridPane.columnIndex="4" GridPane.rowIndex="3"/>
+        <CheckBox id="gazobeton-500-insulate-2" text="Утепление XPS 100" translateX="10" GridPane.columnIndex="4" GridPane.rowIndex="4"/>
+        <CheckBox id="gazobeton-500-insulate-3" text="Утепление МВ 100" translateX="10" GridPane.columnIndex="4" GridPane.rowIndex="5"/>
+    </GridPane>   
+<!-- * ////////////////////////////////////////////////////////////
+     * Материал №5 ///////////////////////////////////////////////
+     * //////////////////////////////////////////////////////////// -->   
+     <GridPane id="kirpich-propertyGridPane" hgap="15" vgap="7" prefWidth="500" GridPane.columnIndex="0"  GridPane.rowIndex="5" GridPane.columnSpan="2">
+        <Label text="Кирпич красный" GridPane.columnIndex="0" GridPane.rowIndex="0" GridPane.columnSpan="2"/>
+
+        <CheckBox id="kirpich-1" text="Толщина 1" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+        <CheckBox id="kirpich-1-non-insulate" text="Без утепления" translateX="10" GridPane.columnIndex="0" GridPane.rowIndex="2"/>
+        <CheckBox id="kirpich-1-insulate-1" text="Утепление XPS 50" translateX="10" GridPane.columnIndex="0" GridPane.rowIndex="3"/>
+        <CheckBox id="kirpich-1-insulate-2" text="Утепление XPS 100" translateX="10" GridPane.columnIndex="0" GridPane.rowIndex="4"/>
+        <CheckBox id="kirpich-1-insulate-3" text="Утепление МВ 100" translateX="10" GridPane.columnIndex="0" GridPane.rowIndex="5"/>
+
+        <Separator  GridPane.columnIndex="1" GridPane.rowIndex="1" orientation="vertical"  GridPane.rowSpan="5" translateX="5" />
+
+        <CheckBox id="kirpich-1.5" text="Толщина 1.5" GridPane.columnIndex="2" GridPane.rowIndex="1"/>
+        <CheckBox id="kirpich-1.5-non-insulate" text="Без утепления" translateX="10" GridPane.columnIndex="2" GridPane.rowIndex="2"/>
+        <CheckBox id="kirpich-1.5-insulate-1" text="Утепление XPS 50" translateX="10" GridPane.columnIndex="2" GridPane.rowIndex="3"/>
+        <CheckBox id="kirpich-1.5-insulate-2" text="Утепление XPS 100" translateX="10" GridPane.columnIndex="2" GridPane.rowIndex="4"/>
+        <CheckBox id="kirpich-1.5-insulate-3" text="Утепление МВ 100" translateX="10" GridPane.columnIndex="2" GridPane.rowIndex="5"/>
+
+        <Separator  GridPane.columnIndex="3" GridPane.rowIndex="1" orientation="vertical"  GridPane.rowSpan="5" translateX="5" />
+
+        <CheckBox id="kirpich-2" text="Толщина 2" GridPane.columnIndex="4" GridPane.rowIndex="1"/>
+        <CheckBox id="kirpich-2-500-non-insulate" text="Без утепления" translateX="10" GridPane.columnIndex="4" GridPane.rowIndex="2"/>
+        <CheckBox id="kirpich-2-500-insulate-1" text="Утепление XPS 50" translateX="10" GridPane.columnIndex="4" GridPane.rowIndex="3"/>
+        <CheckBox id="kirpich-2-500-insulate-2" text="Утепление XPS 100" translateX="10" GridPane.columnIndex="4" GridPane.rowIndex="4"/>
+        <CheckBox id="kirpich-2-500-insulate-3" text="Утепление МВ 100" translateX="10" GridPane.columnIndex="4" GridPane.rowIndex="5"/>
+    </GridPane>      
+<!-- * ////////////////////////////////////////////////////////////
+     * Проемы ///////////////////////////////////////////////
+     * //////////////////////////////////////////////////////////// -->   
+    <GridPane id="apertureGridPane" hgap="15" vgap="7" prefWidth="500" GridPane.columnIndex="2" GridPane.rowIndex="1" GridPane.columnSpan="2" GridPane.rowSpan="2">
+        <Label text="Проемы" GridPane.columnIndex="0" GridPane.rowIndex="0" GridPane.columnSpan="2"/>
+
+        <TableView fx:id="tableView" GridPane.columnIndex="0" GridPane.rowIndex="1">
+            <columns>
+                <TableColumn text="Название">
+                    <cellValueFactory><PropertyValueFactory property="apertureName" />
+                    </cellValueFactory>
+                </TableColumn>
+                <TableColumn text="Площадь">
+                    <cellValueFactory><PropertyValueFactory property="apertureArea" />
+                    </cellValueFactory>
+                </TableColumn>
+                <TableColumn text="Ширина">
+                    <cellValueFactory><PropertyValueFactory property="apertureNeedLintelledWidth" />
+                    </cellValueFactory>
+                </TableColumn>
+            </columns>  
+            
+            <items>
+    <FXCollections fx:factory="observableArrayList">
+<!--        <Person firstName="Jacob" lastName="Smith"  
+             email="jacob.smith@example.com"/>
+        <Person firstName="Isabella" lastName="Johnson" 
+             email="isabella.johnson@example.com"/>
+        <Person firstName="Ethan" lastName="Williams" 
+             email="ethan.williams@example.com"/>
+        <Person firstName="Emma" lastName="Jones"
+             email="emma.jones@example.com"/>
+        <Person firstName="Michael" lastName="Brown" 
+             email="michael.brown@example.com"/>-->
+    </FXCollections>
+</items>
+            
+        </TableView>
+        <HBox spacing="10" alignment="bottom_right" GridPane.columnIndex="0" GridPane.rowIndex="2">
+          <TextField fx:id="apertureNameField" promptText="Название" prefWidth="150"/>
+          <TextField fx:id="apertureAreaField" promptText="Площадь, кв.м." prefWidth="90"/>
+          <TextField fx:id="apertureNeedLintelledWidthField" promptText="Ширина, мм" prefWidth="90"/>
+          <Button text="Add" onAction="#addAperture"/>
+        </HBox>
+    </GridPane>      
+       
+  <stylesheets>
+    <URL value="@fxmlpropertypane.css" />
+  </stylesheets>
+</GridPane>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.cell.*?> 
+<?import javafx.collections.*?> 
+
+<GridPane id="inner-loaded-wall-property-GridPane" hgap="15" vgap="10" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.141" fx:controller="estimatecalculator.propertypane.innerloadedwall.InnerLoadedWallController" prefWidth="300">
+<padding><Insets top="25" right="25" bottom="10" left="25"/></padding>
+<!-- * ////////////////////////////////////////////////////////////
+     * Материал №1 ///////////////////////////////////////////////
+     * //////////////////////////////////////////////////////////// -->
+    <Label id="label"  text="Внутренняя несущая стена" GridPane.columnIndex="0" GridPane.rowIndex="0" GridPane.columnSpan="2"  prefWidth="200"/>
+    <TextField fx:id="innerloadedTextField" promptText="Площадь, кв.м." prefWidth="90" GridPane.columnIndex="2" GridPane.rowIndex="0" GridPane.columnSpan="2"  />
+
+    <GridPane id="2nf-inner-loaded-wall-GridPane" hgap="15" vgap="7" prefWidth="500" GridPane.columnIndex="0"  GridPane.columnSpan="2" GridPane.rowIndex="1">
+        <Label text="Камень 2НФ" GridPane.columnIndex="0" GridPane.rowIndex="0" GridPane.columnSpan="2"/>
+        <fx:define>
+            <ToggleGroup fx:id="toggleGroup0"/>  
+        </fx:define>
+        <RadioButton toggleGroup="$toggleGroup0" id="2nf-inner-loaded-wall-1.5-RadioButton" text="Толщина 1.5 камня" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+        <RadioButton toggleGroup="$toggleGroup0" id="2nf-inner-loaded-wall-2-RadioButton" text="Толщина 2 камня" GridPane.columnIndex="1" GridPane.rowIndex="1"/>    
+        <RadioButton toggleGroup="$toggleGroup0" id="2nf-inner-loaded-wall-2.5-RadioButton" text="Толщина 2.5 камня" GridPane.columnIndex="2" GridPane.rowIndex="1"/>    
+    </GridPane>   
+<!-- * ////////////////////////////////////////////////////////////
+     * Материал №2 ///////////////////////////////////////////////
+     * //////////////////////////////////////////////////////////// -->
+    <GridPane id="keramzitoblock-inner-loaded-wall-GridPane" hgap="15" vgap="7" prefWidth="500" GridPane.columnIndex="0" GridPane.rowIndex="2" GridPane.columnSpan="2">
+        <Label text="Керамзитоблок" GridPane.columnIndex="0" GridPane.rowIndex="0" GridPane.columnSpan="2"/>
+        <fx:define>
+            <ToggleGroup fx:id="toggleGroup1"/>  
+        </fx:define>
+        <RadioButton toggleGroup="$toggleGroup1" id="keramzitoblock-inner-loaded-wall-1.5-RadioButton" text="Толщина 1 блок" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+        <RadioButton toggleGroup="$toggleGroup1" id="keramzitoblock-inner-loaded-wall-2-RadioButton" text="Толщина 1,5 блока" GridPane.columnIndex="1" GridPane.rowIndex="1"/>    
+        <RadioButton toggleGroup="$toggleGroup1" id="keramzitoblock-inner-loaded-wall-2.5-RadioButton" text="Толщина 2 блока" GridPane.columnIndex="2" GridPane.rowIndex="1"/> 
+    </GridPane>   
+<!-- * ////////////////////////////////////////////////////////////
+     * Материал №3 ///////////////////////////////////////////////
+     * //////////////////////////////////////////////////////////// -->    
+    <GridPane id="porotherm-propertyGridPane" hgap="15" vgap="7" prefWidth="500" GridPane.columnIndex="0"  GridPane.rowIndex="3" GridPane.columnSpan="2">
+        <Label text="Porotherm" GridPane.columnIndex="0" GridPane.rowIndex="0" GridPane.columnSpan="2"/>
+        <fx:define>
+            <ToggleGroup fx:id="toggleGroup2"/>  
+        </fx:define>
+        <RadioButton toggleGroup="$toggleGroup2" id="porotherm-38-inner-loaded-wall-RadioButton" text="Porotherm-38" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+        <RadioButton toggleGroup="$toggleGroup2" id="porotherm-44-inner-loaded-wall-RadioButton" text="Porotherm-44" GridPane.columnIndex="1" GridPane.rowIndex="1"/>    
+        <RadioButton toggleGroup="$toggleGroup2" id="porotherm-51-inner-loaded-wall-RadioButton" text="Porotherm-51" GridPane.columnIndex="2" GridPane.rowIndex="1"/> 
+    </GridPane>   
+<!-- * ////////////////////////////////////////////////////////////
+     * Материал №4 ///////////////////////////////////////////////
+     * //////////////////////////////////////////////////////////// -->    
+     <GridPane id="gazobeton-propertyGridPane" hgap="15" vgap="7" prefWidth="500" GridPane.columnIndex="0"  GridPane.rowIndex="4" GridPane.columnSpan="2">
+        <Label text="Газобетон" GridPane.columnIndex="0" GridPane.rowIndex="0" GridPane.columnSpan="2"/>
+        <fx:define>
+            <ToggleGroup fx:id="toggleGroup3"/>  
+        </fx:define>
+        <RadioButton toggleGroup="$toggleGroup3" id="gazobeton-inner-loaded-wall-300-RadioButton" text="Толщина 300мм" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+        <RadioButton toggleGroup="$toggleGroup3" id="gazobeton-inner-loaded-wall-400-RadioButton" text="Толщина 400мм" GridPane.columnIndex="1" GridPane.rowIndex="1"/>    
+        <RadioButton toggleGroup="$toggleGroup3" id="gazobeton-inner-loaded-wall-500-RadioButton" text="Толщина 500мм" GridPane.columnIndex="2" GridPane.rowIndex="1"/> 
+    </GridPane>   
+<!-- * ////////////////////////////////////////////////////////////
+     * Материал №5 ///////////////////////////////////////////////
+     * //////////////////////////////////////////////////////////// -->   
+     <GridPane id="kirpich-propertyGridPane" hgap="15" vgap="7" prefWidth="500" GridPane.columnIndex="0"  GridPane.rowIndex="5" GridPane.columnSpan="2">
+        <Label text="Кирпич красный" GridPane.columnIndex="0" GridPane.rowIndex="0" GridPane.columnSpan="2"/>
+        <fx:define>
+            <ToggleGroup fx:id="toggleGroup4"/>  
+        </fx:define>
+        <RadioButton toggleGroup="$toggleGroup4" id="kirpich-inner-loaded-wall-1.5-RadioButton" text="Толщина 1" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+        <RadioButton toggleGroup="$toggleGroup4" id="kirpich-inner-loaded-wall-2-RadioButton" text="Толщина 1.5" GridPane.columnIndex="1" GridPane.rowIndex="1"/>    
+        <RadioButton toggleGroup="$toggleGroup4" id="kirpich-inner-loaded-wall-2.5-RadioButton" text="Толщина 2" GridPane.columnIndex="2" GridPane.rowIndex="1"/> 
+    </GridPane>      
+<!-- * ////////////////////////////////////////////////////////////
+     * Проемы ///////////////////////////////////////////////
+     * //////////////////////////////////////////////////////////// -->   
+    <GridPane id="apertureGridPane" hgap="15" vgap="7" prefWidth="500" GridPane.columnIndex="2" GridPane.rowIndex="1" GridPane.columnSpan="2" GridPane.rowSpan="6">
+        <Label text="Проемы" GridPane.columnIndex="0" GridPane.rowIndex="0" GridPane.columnSpan="2"/>
+
+        <TableView fx:id="tableView" GridPane.columnIndex="0" GridPane.rowIndex="1">
+            <columns>
+                <TableColumn text="Название">
+                    <cellValueFactory><PropertyValueFactory property="apertureName" />
+                    </cellValueFactory>
+                </TableColumn>
+                <TableColumn text="Площадь">
+                    <cellValueFactory><PropertyValueFactory property="apertureArea" />
+                    </cellValueFactory>
+                </TableColumn>
+                <TableColumn text="Ширина">
+                    <cellValueFactory><PropertyValueFactory property="apertureNeedLintelledWidth" />
+                    </cellValueFactory>
+                </TableColumn>
+            </columns>  
+            
+            <items>
+
+</items>
+            
+        </TableView>
+        <HBox spacing="10" alignment="bottom_right" GridPane.columnIndex="0" GridPane.rowIndex="2">
+          <TextField fx:id="apertureNameField" promptText="Название" prefWidth="150"/>
+          <TextField fx:id="apertureAreaField" promptText="Площадь, кв.м." prefWidth="90"/>
+          <TextField fx:id="apertureNeedLintelledWidthField" promptText="Ширина, мм" prefWidth="90"/>
+<!--          <Button text="Add" onAction="#addInnerLoadedWallAperture"/>-->
+        </HBox>
+    </GridPane>      
+       
+  <stylesheets>
+    <URL value="@innerloadedwall.css" />
+  </stylesheets>
+</GridPane>

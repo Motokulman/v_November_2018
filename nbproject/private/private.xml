@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="2">
+        <file>
+            <url>src/estimatecalculator/classes/bottom/BottomPane.java</url>
+            <bookmark id="1">
+                <name/>
+                <line>115</line>
+                <key/>
+            </bookmark>
+        </file>
+    </editor-bookmarks>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/Users/I/Documents/NetBeansProjects/EstimateCalculator8/src/estimatecalculator/classes/insulate/RWalueByInsulateThick.java</file>
+            <file>file:/C:/Users/I/Documents/NetBeansProjects/EstimateCalculator8/src/estimatecalculator/classes/database/MainDB.java</file>
+            <file>file:/C:/Users/I/Documents/NetBeansProjects/EstimateCalculator8/src/estimatecalculator/classes/walls/ProjectWallByFunction.java</file>
+            <file>file:/C:/Users/I/Documents/NetBeansProjects/EstimateCalculator8/src/estimatecalculator/classes/foundament/StretchGrillage.java</file>
+            <file>file:/C:/Users/I/Documents/NetBeansProjects/EstimateCalculator8/src/estimatecalculator/classes/ModelCanvas.java</file>
+            <file>file:/C:/Users/I/Documents/NetBeansProjects/EstimateCalculator8/src/estimatecalculator/Settings.java</file>
+            <file>file:/C:/Users/I/Documents/NetBeansProjects/EstimateCalculator8/src/estimatecalculator/classes/elements/WallTypeByFunctionalEnum.java</file>
+            <file>file:/C:/Users/I/Documents/NetBeansProjects/EstimateCalculator8/src/estimatecalculator/EstimateCalculator.java</file>
+            <file>file:/C:/Users/I/Documents/NetBeansProjects/EstimateCalculator8/src/estimatecalculator/classes/bottom/BottomPane.java</file>
+            <file>file:/C:/Users/I/Documents/NetBeansProjects/EstimateCalculator8/src/estimatecalculator/enums/WallsMaterialsEnum.java</file>
+            <file>file:/C:/Users/I/Documents/NetBeansProjects/EstimateCalculator8/src/estimatecalculator/classes/database/ProjectDB.java</file>
+            <file>file:/C:/Users/I/Documents/NetBeansProjects/EstimateCalculator8/src/estimatecalculator/enums/CustomOrPreset.java</file>
+        </group>
+    </open-files>
+</project-private>
